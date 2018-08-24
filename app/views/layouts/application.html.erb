@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+      	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/assets/boostrap4/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="/assets/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="/assets/animate.css">
+  <link rel="stylesheet" type="text/css" href="/assets/styles/main_styles.css">
+  <link rel="stylesheet" type="text/css" href="/assets/styles/responsive.css">
+  <!--cdn 추가-->
+  <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">-->
+
+  	<!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+  
+  <!--<% if user_signed_in? %>-->
+  <!--로그아웃 기능-->
+  <!--  <p><%= link_to 'Log out', destroy_user_session_path, method: :delete %></p>-->
+  <!--<% end %>-->
+  <%= yield %>
+  <script src="/assets/jquery-3.2.1.min.js"></script>
+  <script src="/assets/bootstrap4/popper.js"></script>
+  <script src="/assets/bootstrap4/bootstrap.min.js"></script>
+  <script src="/assets/isotope.pkgd.min.js"></script>
+  <script src="/assets/owl.carousel.js"></script>
+  <script src="/assets/easing.js"></script>
+  <script src="/assets/custom.js"></script>
+  <!--cdn추가-->
+  <!--<script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
+  <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>-->
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+</body>
+</html>

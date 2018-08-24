@@ -1,0 +1,34 @@
+<div class="row" style="margin-top:50px;">
+  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+    <h3 class="text-center">로그인</h3>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-group">
+        <strong>아이디</strong>
+        <%= f.email_field :email, autofocus: true, placeholder: 'Id입력', class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <strong>패스워드</strong>
+        <%= f.password_field :password, autocomplete: "off", placeholder: '비밀번호', class: 'form-control' %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="form-check">
+          <label class="form-check-label">
+            <%= f.check_box :remember_me, class: "form-check-input" %>
+            아이디와 비밀번호를 기억하시겠습니까?
+          </label>
+        </div>
+      <% end -%>
+
+      <div class="form-group">
+        <%= f.submit "Log in", class: "btn btn-primary btn-block btn-lg" %>
+      </div>
+    <% end %>
+
+    <div class="text-center">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
